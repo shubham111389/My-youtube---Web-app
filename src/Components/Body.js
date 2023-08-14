@@ -1,8 +1,13 @@
-import React from 'react'
+import ButtonList from "./ButtonList";
+import VideoContainer from "./VideoContainer.js";
+
 
 const Body = () => {
   return (
-    <div>Body</div>
+    <div>
+       <ButtonList />
+      <VideoContainer />
+    </div>
   )
 }
 
