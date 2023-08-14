@@ -1,14 +1,14 @@
-import ButtonList from "./ButtonList";
-import VideoContainer from "./VideoContainer.js";
-
+import React from "react";
+import SideBar from "./SideBar";
+import MainContainer from "./MainContainer";
 
 const Body = () => {
   return (
-    <div>
-       <ButtonList />
-      <VideoContainer />
+    <div className="flex">
+      <SideBar className="grid-cols-1" />
+      <MainContainer className="grid-cols-11" />
     </div>
-  )
-}
+  );
+};
 
 export default Body;
