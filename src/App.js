@@ -1,6 +1,9 @@
 import Header  from './Components/Header'
 import Body from './Components/Body';
 import Footer from './Components/Footer';
+import store from './utils/store';
+import { Provider } from 'react-redux';
+
 
 
 /* My  MYutbe structure will look like this, 
@@ -25,17 +28,15 @@ import Footer from './Components/Footer';
 
 function App() {
   return (
+    <Provider store={store}>
     <div className="text-lg " >
     
  <Header />
- <Footer />
+
  <Body />
-  
-      hii
-      
-      
-     
-    </div>
+ <Footer />
+  </div>
+ </Provider>
   );
 }
 
