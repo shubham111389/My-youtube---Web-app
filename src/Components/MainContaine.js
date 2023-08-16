@@ -5,10 +5,14 @@ import VideoContainer from "./VideoContainer";
 const MainContainer = () => {
   return (
     <div>
+    <div className="grid-cols-11">
       <ButtonList />
-      <VideoContainer  />
+      <VideoContainer />
+    </div>
     </div>
   );
 };
+    
+
 
 export default MainContainer;
