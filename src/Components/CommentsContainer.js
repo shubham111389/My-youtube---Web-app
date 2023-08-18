@@ -1,28 +1,28 @@
 import React from "react";
 import CommentsList from "./CommentsList";
-import Comment from "./Comment";
+
 
 const CommentsContainer = () => {
   const commentsData = [
     {
-      name: "Maddy",
+      name: "shubham",
       text: "Comment Goes Here!",
       replies: [
         {
-          name: "Maddy",
+          name: "shubham",
           text: "Comment Goes Here!",
           replies: [
             {
-              name: "Maddy",
+              name: "shubham",
               text: "Comment Goes Here!",
               replies: [],
             },
             {
-              name: "Maddy",
+              name: "shubham",
               text: "Comment Goes Here!",
               replies: [
                 {
-                  name: "Maddy",
+                  name: "shubham",
                   text: "Comment Goes Here!",
                   replies: [],
                 },
@@ -33,37 +33,37 @@ const CommentsContainer = () => {
       ],
     },
     {
-      name: "Maddy",
+      name: "shubham",
       text: "Comment Goes Here!",
       replies: [
         {
-          name: "Maddy",
+          name: "shubham",
           text: "Comment Goes Here!",
           replies: [],
         },
         {
-          name: "Maddy",
+          name: "shubham",
           text: "Comment Goes Here!",
           replies: [],
         },
       ],
     },
     {
-      name: "Maddy",
+      name: "shubham",
       text: "Comment Goes Here!",
       replies: [
         {
-          name: "Maddy",
+          name: "shubham",
           text: "Comment Goes Here!",
           replies: [],
         },
         {
-          name: "Maddy",
+          name: "shubham",
           text: "Comment Goes Here!",
           replies: [],
         },
         {
-          name: "Maddy",
+          name: "shubham",
           text: "Comment Goes Here!",
           replies: [],
         },

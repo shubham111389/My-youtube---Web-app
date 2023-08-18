@@ -1,11 +1,11 @@
 import Header  from './Components/Header'
 import Body from './Components/Body';
-import Footer from './Components/Footer';
+
 import store from './utils/store';
 import { Provider } from 'react-redux';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainContainer from "./Components/MainContaine";
-import WatchVideo from "./Components/WatchVide";
+import WatchVideo from "./Components/WatchVideo";
 
 
 
