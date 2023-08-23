@@ -12,6 +12,7 @@ const ButtonList = () => {
     "Music",
     "Comedy",
     "Gaming",
+    "Live",
     "TED Talks",
     "Entertainment",
     "Rocket Science",

@@ -13,7 +13,7 @@ const VideoCard = ({ videoData }) => {
       <img className="rounded-lg" src={thumbnails.medium.url} alt="thumbnail" />
       <div className="flex my-2">
         <img className="w-8 h-8" src={user} alt="user" />
-        <h1 className="font-bold mx-2 text-md">
+        <h1 className="font-bold mx-2 text-sm">
           {title.length > 45 ? title.substr(0, 45) + "..." : title}
         </h1>
       </div>
