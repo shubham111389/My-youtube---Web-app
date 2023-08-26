@@ -11,9 +11,9 @@ const VideoCard = ({ videoData }) => {
   const { snippet, statistics } = videoData;
   const { channelTitle, title, thumbnails } = snippet;
   return (
-    <div className="w-64 h-64 hover:shadow-lg m-2 p-2 rounded-lg hover:animate-pulse">
+    <div className="w-80 h-[19rem] hover:shadow-lg m-2   p-2 flex-wrap rounded-lg hover:animate-pulse">
     <img className="rounded-lg" src={thumbnails.medium.url} alt="thumbnail" />
-    <div className="flex my-2">
+    <div className="flex my-2 ">
       <img className="w-8 h-8" src={user} alt="user" />
       <div className="mx-2">
         <div className="font-bold text-sm h-10">
@@ -33,5 +33,24 @@ const VideoCard = ({ videoData }) => {
     </div>
   </div>
 );
+};
+export const AdVideoCard = ({ videoData }) => {
+  return (
+    <div>
+      <div
+        id="tooltip-default"
+        role="tooltip"
+        className="z-10 absolute mt-3 mx-64 text-slate-200 text-base"
+      >
+        AD
+      </div>
+      <div
+        className="hover:bg-gray-400 rounded-lg"
+        data-tooltip-target="tooltip-default"
+      >
+        <VideoCard videoData={videoData} />
+      </div>
+    </div>
+  );
 };
 export default VideoCard;

@@ -4,12 +4,13 @@ import VideoContainer from "./VideoContainer";
 
 const MainContainer = () => {
   return (
-    <div>
-    <div className="grid-cols-11">
-      <ButtonList />
+    <div className="px-3 py-2">
+
+         <ButtonList />
+      
       <VideoContainer />
     </div>
-    </div>
+   
   );
 };
     

@@ -49,7 +49,7 @@ const Header = () => {
 
   return (
       <>
-    <div className="grid grid-flow-col shadow-lg p-2">
+    <div className="grid grid-flow-col shadow-lg p-2 ">
       <div className="flex col-span-1 py-3">
         <img
           src={menu}
