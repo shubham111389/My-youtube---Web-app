@@ -7,7 +7,7 @@ const Body = () => {
   return (
   
     <div className="flex ">
-      <div className="w-52 shadow-lg border-0 m-2  border-red-100">
+      <div className="w-56 shadow-lg border-1 m-2  border-red-200 h-screen sticky top-20">
  
      <SideBar />
      </div>

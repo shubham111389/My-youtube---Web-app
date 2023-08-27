@@ -49,11 +49,13 @@ function App() {
   return (
     <Provider store={store}>
     <div className="text-lg  " >
-    
+    <div className=' sticky top-0 z-50 bg-white'>
  <Header />
- 
+ </div>
+ <div className='relative'>
  <RouterProvider router={appRouter} />
-  </div>
+ </div>
+ </div>
  </Provider>
   );
 }
