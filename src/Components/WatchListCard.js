@@ -6,9 +6,9 @@ const WatchListCard = ({ videoData }) => {
   const { snippet, statistics } = videoData;
   const { channelTitle, title, thumbnails } = snippet;
   return (
-    <div className="h-30 w-96 hover:shadow-lg p-2 rounded-lg flex">
+    <div className="h-30 w-[30rem] hover:shadow-lg p-2 rounded-lg flex ">
       <img
-        className="rounded-lg h-24 w-48"
+        className="rounded-lg h-32 w-56"
         src={thumbnails.medium.url}
         alt="thumbnail"
       />

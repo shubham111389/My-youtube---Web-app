@@ -7,14 +7,14 @@ const LiveChat = () => {
   const dispatch = useDispatch();
   const [liveMessage, setLiveMessage] = useState("");
   const chatMessage = useSelector((store) => store.chat.messages);
-  console.log(chatMessage);
+
   useEffect(() => {
     const i = setInterval(() => {
       // API Polling
       dispatch(
         addMessage({
           name: randomNameGenerator(5),
-          message: randomNameGenerator(25),
+          message: randomNameGenerator(30),
         })
       );
     }, 1000);
@@ -34,8 +34,8 @@ const LiveChat = () => {
 
   return (
     <div>
-      <div className="mt-4 rounded-md border border-black h-60 p-2 w-96 overflow-scroll flex-col-reverse">
-        <div className="text-md font-bold">Live Chat</div>
+      <div className="mt-4 rounded-md border border-black  p-2 py-1 overflow-scroll h-[530px] w-[30rem] ">
+        <div className="text-md font-bold py-2 sticky">Live Chat</div>
         {chatMessage?.map((item) => (
           <ChatMessage
             key={item.name}
@@ -45,12 +45,12 @@ const LiveChat = () => {
         ))}
       </div>
       <form
-        className="border border-black my-2 w-full"
+        className="border border-black my-2 w-full rounded-lg"
         onSubmit={(e) => {
           e.preventDefault();
           dispatch(
             addMessage({
-              name: "Deepak",
+              name: "Shubham",
               message: liveMessage,
             })
           );
@@ -58,13 +58,13 @@ const LiveChat = () => {
         }}
       >
         <input
-          className="mx-2 px-2"
+          className="mx-2 px-2 w-[23rem] h-10 border border-slate-400 rounded-lg"
           type="text"
           value={liveMessage}
           placeholder="Your Message"
           onChange={(e) => setLiveMessage(e.target.value)}
         />
-        <button className="m-2 bg-green-200 text-sm font-bold p-1">Send</button>
+        <button className="m-2 w-16 rounded-lg  bg-green-300 text-lg font-bold p-1">Send</button>
       </form>
     </div>
   );

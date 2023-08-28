@@ -2,12 +2,15 @@ import React from "react";
 import logo from "../assets/img/logo.png";
 import menu from "../assets/img/menu.png";
 import user from "../assets/img/user.png";
+import { Link } from "react-router-dom";
 import { useDispatch,useSelector } from "react-redux";
 import { useEffect,useState } from "react";
 import { toggleMenu } from "../utils/appSlice";
 import { YOUTUBE_SEARCH_API_URL } from "../constants";
 import { cacheResults } from "../utils/searchSlice";
 import search from "../assets/img/search.png";
+import Search_Keyword_page from "./Search_Keyword_page";
+
 
 
 
@@ -46,6 +49,7 @@ const Header = () => {
   const toggleMenuHandler = () => {
     dispatch(toggleMenu());
   };
+  
 
   return (
       <>
@@ -73,15 +77,19 @@ const Header = () => {
             <img src={search} className="w-4 mx-2 my-1" alt="search" />
           </button>
         </div>
-      
+         
         <div className="bg-white px-5 w-[41.666667%] shadow-lg rounded-lg absolute">
           {
             <ul>
-              {suggestions.map((item) => (
+              {suggestions.map((item,index) => (
+                 <Link to={"/search?v=" + suggestions[index]}>
                  <li className="p-1 py-1 hover:bg-gray-200 flex" key={item}>
-                  <img src={search} className="w-4 mx-2 my-1 " alt="search" />
-                  {item}
-                </li>
+                
+                   <img src={search} className="w-4 mx-2 my-1" alt="search" />
+                   {item}
+                
+               </li>
+               </Link>
               ))}
             </ul>
           }</div>

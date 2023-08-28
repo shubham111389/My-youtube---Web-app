@@ -7,7 +7,7 @@ const SideBar = () => {
 
 
   return !isMenuOpen ?null : (
-    <div className=" ">
+    <div className=" w-44">
     <div className="   m-2 p-2">
       <div className="">
         <h1 className="font-bold">Subscriptions</h1>
