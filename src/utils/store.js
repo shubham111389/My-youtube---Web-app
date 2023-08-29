@@ -4,6 +4,7 @@ import appSlice from "./appSlice";
 import searchSlice from "./searchSlice";
 import chatSlice from "./chatSlice";
 import videoSlice from "./videoSlice";
+import suggestionSlice from "./suggestionSlice";
 
 const store = configureStore({
   reducer: {
@@ -11,6 +12,7 @@ const store = configureStore({
     search: searchSlice,
     chat:chatSlice,
     video:videoSlice,
+    suggestion:suggestionSlice,
   
   },
 });

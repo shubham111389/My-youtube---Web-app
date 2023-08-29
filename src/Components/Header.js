@@ -9,7 +9,8 @@ import { toggleMenu } from "../utils/appSlice";
 import { YOUTUBE_SEARCH_API_URL } from "../constants";
 import { cacheResults } from "../utils/searchSlice";
 import search from "../assets/img/search.png";
-import Search_Keyword_page from "./Search_Keyword_page";
+import SuggestionList from "./SuggenstionList";
+import { toggleList } from "../utils/suggestionSlice";
 
 
 
@@ -19,6 +20,7 @@ const Header = () => {
   const dispatch = useDispatch();
   const [searchQuery, setSearchQuery] = useState("");
   const [suggestions, setSuggestions] = useState([]);
+  const [suggestedValue,setSuggestedValue]=useState(false);
 
   const searchCache = useSelector((store) => store.search);
   useEffect(() => {
@@ -49,7 +51,10 @@ const Header = () => {
   const toggleMenuHandler = () => {
     dispatch(toggleMenu());
   };
-  
+  const suggestedListHandler= ()=>{
+    dispatch(toggleList());
+  };
+ 
 
   return (
       <>
@@ -60,6 +65,7 @@ const Header = () => {
           className="h-10 cursor-pointer py-2 px-5"
           alt="menu-icon"
           onClick={() => toggleMenuHandler()}
+          
         />
         <a>
         <img src={logo} className="h-10 p-1 " alt="logo-icon" />
@@ -72,35 +78,25 @@ const Header = () => {
             className="w-2/3 h-10 p-2 py-4 border border-gray-400 text-gray-900 text-sm rounded-l-full focus:ring-blue-500"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
+            onClick={suggestedListHandler}
+          
           />
           <button className="bg-gray-50 border border-gray-400 h-10 w-14 rounded-r-full p-2 font-bold justify-center">
             <img src={search} className="w-4 mx-2 my-1" alt="search" />
           </button>
         </div>
-         
-        <div className="bg-white px-5 w-[41.666667%] shadow-lg rounded-lg absolute">
-          {
-            <ul>
-              {suggestions.map((item,index) => (
-                 <Link to={"/search?v=" + suggestions[index]}>
-                 <li className="p-1 py-1 hover:bg-gray-200 flex" key={item}>
-                
-                   <img src={search} className="w-4 mx-2 my-1" alt="search" />
-                   {item}
-                
-               </li>
-               </Link>
-              ))}
-            </ul>
-          }</div>
-      </div>
+          
+        <div>
+        { suggestedValue? null : <SuggestionList  storage={suggestions} />}
+        </div>
+           </div> 
       <div>
         <div className="py-3">
           <img src={user} className="h-8 " alt="user-icon" />
         </div>
       </div>
       
-   
+     
      </div>
     </>
    
