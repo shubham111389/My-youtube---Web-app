@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useSearchParams } from 'react-router-dom';
-import verified from "../assets/img/verified.png";
-import WatchListCard from './WatchListCard';
 import { Link } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
+
+import WatchSearchVideo from './WatchSearchVideo';
 
 
 
@@ -11,8 +11,7 @@ const Search_Keyword_page = () => {
   const [searchParams] = useSearchParams();
 
 
-  const apiUrl = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${searchParams}&key=  'https://ycoutube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=dogs&key=AIzaSyDMmks58JnCCZbBOElgEWoDbbXywov-r1k';
-  `;
+  const apiUrl = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=30&q=${searchParams}&key=AIzaSyDMmks58JnCCZbBOElgEWoDbbXywov-r1k`;
 
   useEffect(() => {
     getVideos();
@@ -25,10 +24,15 @@ const Search_Keyword_page = () => {
   };
 
 
-  console.log(searchVideo);
+ // console.log(searchVideo);
   return(
-    <div> 
-      
+    <div className=' '> 
+     { searchVideo.map( (video)=>(
+      <Link to={"/watch?v=" + video.id} state={{ video: video }}>
+      <WatchSearchVideo videoData={video} />
+      </Link>
+     )
+     )}
     </div>
   )
 };
