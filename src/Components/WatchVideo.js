@@ -42,12 +42,13 @@ const WatchVideo = () => {
         <div className="py-2">
           { hideChat? null : <LiveChat/>}
         </div>
-        
+        <div className="px-2 ">
         {videoList.map((video) => (
           <Link to={"/watch?v=" + video.id}>
             <WatchListCard videoData={video} key={video.id} />
           </Link>
         ))}
+        </div>
       </div>
         
     </div>

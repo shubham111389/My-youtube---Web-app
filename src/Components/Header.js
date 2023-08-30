@@ -67,9 +67,9 @@ const Header = () => {
           onClick={() => toggleMenuHandler()}
           
         />
-        <a>
+        <Link to={"/"}>
         <img src={logo} className="h-10 p-1 " alt="logo-icon" />
-        </a>
+         </Link>
       </div>
        <div className="col-span-10 mx-24">
       <div className="flex py-3">
