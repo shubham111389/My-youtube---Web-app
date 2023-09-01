@@ -11,7 +11,7 @@ const VideoCard = ({ videoData }) => {
   const { snippet, statistics } = videoData;
   const { channelTitle, title, thumbnails } = snippet;
   return (
-    <div className="w-[335px] h-[19rem] hover:shadow-lg m-2   p-4 flex-wrap rounded-lg hover:animate-pulse bg-red-50">
+    <div className="w-[325px] h-[19rem] hover:shadow-lg m-2   p-4 flex-wrap rounded-lg hover:animate-pulse bg-red-50">
     <img className="rounded-lg" src={thumbnails.medium.url} alt="thumbnail" />
     <div className="flex my-2 ">
       <img className="w-8 h-8" src={user} alt="user" />

@@ -1,7 +1,8 @@
 import React from "react";
 import logo from "../assets/img/logo.png";
 import menu from "../assets/img/menu.png";
-import user from "../assets/img/user.png";
+import {  BiVideoPlus } from "react-icons/bi";
+import { BsBell } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useDispatch,useSelector } from "react-redux";
 import { useEffect,useState } from "react";
@@ -20,7 +21,6 @@ const Header = () => {
   const dispatch = useDispatch();
   const [searchQuery, setSearchQuery] = useState("");
   const [suggestions, setSuggestions] = useState([]);
-  const [suggestedValue,setSuggestedValue]=useState(false);
 
   const searchCache = useSelector((store) => store.search);
   useEffect(() => {
@@ -54,11 +54,12 @@ const Header = () => {
   const suggestedListHandler= ()=>{
     dispatch(toggleList());
   };
+  
  
 
   return (
       <>
-    <div className="grid grid-flow-col shadow-lg p-2  ">
+    <div className="grid grid-flow-col shadow-lg p-2  fixed top-0 left-0 w-full bg-white  z-10  ">
       <div className="flex col-span-1 py-3">
         <img
           src={menu}
@@ -83,17 +84,31 @@ const Header = () => {
           />
           <button className="bg-gray-50 border border-gray-400 h-10 w-14 rounded-r-full p-2 font-bold justify-center">
             <img src={search} className="w-4 mx-2 my-1" alt="search" />
+           
+
           </button>
+          <img
+          className="h-8 border ml-4 border-gray-200 rounded-full bg-gray-100"
+          src="https://i.pinimg.com/originals/74/ce/14/74ce14befb22695743659cf8a8290c2b.png"
+          alt="mic-icon"
+        />
         </div>
+
           
         <div>
-        { suggestedValue? null : <SuggestionList  storage={suggestions} />}
+        {  <SuggestionList  storage={suggestions} />}
         </div>
            </div> 
       <div>
-        <div className="py-3">
-          <img src={user} className="h-8 " alt="user-icon" />
-        </div>
+      <div className="flex py-4">
+        <BiVideoPlus className="h-8 mr-7 text-3xl" />
+        <BsBell className="h-8 mr-7 text-2xl" />
+        <img
+          className="h-8"
+          src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+          alt="user-logo"
+        />
+      </div>
       </div>
       
      

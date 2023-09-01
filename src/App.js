@@ -6,7 +6,8 @@ import { Provider } from 'react-redux';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainContainer from "./Components/MainContaine";
 import WatchVideo from "./Components/WatchVideo";
-import Search_Keyword_page from './Components/Search_Keyword_page';
+import Search_Keyword_page from './Components/Search_Keyword_page'
+import Footer from './Components/Footer';
 
 
 
@@ -32,8 +33,9 @@ const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <>
-                <Header />
+               <Header/>
                 <Body />
+                <Footer/>
               </>,
     children: [
       {
@@ -57,12 +59,12 @@ function App() {
   return (
    
     <Provider store={store}>
-    <div className="text-lg  " >
+  
     
  <div className='relative'>
  <RouterProvider router={appRouter} />
  </div>
- </div>
+
  </Provider>
 
   );

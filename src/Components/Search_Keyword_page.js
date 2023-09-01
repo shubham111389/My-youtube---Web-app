@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useSearchParams } from 'react-router-dom';
 
 import WatchSearchVideo from './WatchSearchVideo';
+import ButtonList from './ButtonList';
 
 
 
@@ -11,7 +12,7 @@ const Search_Keyword_page = () => {
   const [searchParams] = useSearchParams();
 
 
-  const apiUrl = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=30&q=${searchParams}&key=AIzaSyDMmks58JnCCZbBOElgEWoDbbXywov-r1k`;
+  const apiUrl = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=30&q=${searchParams}&key=AaSIzyDJYaxCq0w2WVOdFwRaf_EMbtQ3xm-QGV0`;
 
   useEffect(() => {
     getVideos();
@@ -24,15 +25,20 @@ const Search_Keyword_page = () => {
   };
 
 
- // console.log(searchVideo);
+ console.log(searchVideo);
   return(
-    <div className=' '> 
+   <div>
+      <div className='py-3'>
+          <ButtonList/>
+      </div>
+    <div className='py-8' >
      { searchVideo.map( (video)=>(
       <Link to={"/watch?v=" + video.id} state={{ video: video }}>
       <WatchSearchVideo videoData={video} />
       </Link>
      )
      )}
+    </div>
     </div>
   )
 };

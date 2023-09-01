@@ -24,7 +24,8 @@ const VideoContainer = () => {
   return videoData.length === 0 ? (
     <Shimmer key="ShimmerComponent" />
   ) : (
-    <div className="flex flex-wrap ml-4  ">
+    <div className="flex flex-wrap ml-4 z-10 ">
+ 
       {videoData[0] && (
         <Link to={"/watch?v=" + videoData[0].id}>
           <AdVideoCard videoData={videoData[0]} key={videoData[0].id} />
@@ -35,6 +36,8 @@ const VideoContainer = () => {
           <VideoCard videoData={video} key={video.id} />
         </Link>
       ))}
+       
+      
     </div>
     
   );

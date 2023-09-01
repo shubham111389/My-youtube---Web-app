@@ -21,7 +21,7 @@ const ButtonList = () => {
    
   ];
   return (
-    <div>
+    <div className="  fixed top- w-full bg-white  z-10 px-2">
    {buttonList.map((item, index) => (
         <Button key={index} name={item} />
       ))}
