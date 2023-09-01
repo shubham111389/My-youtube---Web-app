@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 import { useSearchParams } from 'react-router-dom';
 
 import WatchSearchVideo from './WatchSearchVideo';
+<<<<<<< HEAD
 import ButtonList from './ButtonList';
+=======
+>>>>>>> 011f860510b997ab92dfa47c101f3cafaa722a4d
 
 
 
@@ -12,7 +15,11 @@ const Search_Keyword_page = () => {
   const [searchParams] = useSearchParams();
 
 
+<<<<<<< HEAD
   const apiUrl = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=30&q=${searchParams}&key=AaSIzyDJYaxCq0w2WVOdFwRaf_EMbtQ3xm-QGV0`;
+=======
+  const apiUrl = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=30&q=${searchParams}&key=AIzaSyDMmks58JnCCZbBOElgEWoDbbXywov-r1k`;
+>>>>>>> 011f860510b997ab92dfa47c101f3cafaa722a4d
 
   useEffect(() => {
     getVideos();
@@ -25,6 +32,7 @@ const Search_Keyword_page = () => {
   };
 
 
+<<<<<<< HEAD
  console.log(searchVideo);
   return(
    <div>
@@ -32,13 +40,21 @@ const Search_Keyword_page = () => {
           <ButtonList/>
       </div>
     <div className='py-8' >
+=======
+ // console.log(searchVideo);
+  return(
+    <div className=' '> 
+>>>>>>> 011f860510b997ab92dfa47c101f3cafaa722a4d
      { searchVideo.map( (video)=>(
       <Link to={"/watch?v=" + video.id} state={{ video: video }}>
       <WatchSearchVideo videoData={video} />
       </Link>
      )
      )}
+<<<<<<< HEAD
     </div>
+=======
+>>>>>>> 011f860510b997ab92dfa47c101f3cafaa722a4d
     </div>
   )
 };

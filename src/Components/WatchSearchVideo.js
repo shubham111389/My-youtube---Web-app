@@ -5,7 +5,10 @@ import verified from "../assets/img/verified.png";
 const WatchSearchVideo = (videoData) => {
 const { snippet } = videoData.videoData;
 const{ title,thumbnails}=snippet;
+<<<<<<< HEAD
 {console.log(thumbnails.medium.url)}
+=======
+>>>>>>> 011f860510b997ab92dfa47c101f3cafaa722a4d
 
 
 return (
