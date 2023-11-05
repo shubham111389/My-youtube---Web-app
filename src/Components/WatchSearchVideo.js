@@ -5,14 +5,10 @@ import verified from "../assets/img/verified.png";
 const WatchSearchVideo = (videoData) => {
 const { snippet } = videoData.videoData;
 const{ title,thumbnails}=snippet;
-<<<<<<< HEAD
-{console.log(thumbnails.medium.url)}
-=======
->>>>>>> 011f860510b997ab92dfa47c101f3cafaa722a4d
 
 
 return (
-    <div className="h-30 w-92 hover:shadow-lg px-8 py-6 rounded-lg flex hover:animate-pulse  bg-red-50">
+    <div className="h-30 w-f hover:shadow-lg px-8 py-6 rounded-lg flex hover:animate-pulse  bg-red-100 ">
      <img
         className="rounded-lg h-30 w-50"
         src={thumbnails.medium.url}

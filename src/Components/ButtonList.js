@@ -18,10 +18,13 @@ const ButtonList = () => {
     "Rocket Science",
     "India",
     "Electinos",
+    "Hindi Cinema",
+    "WWE",
+    "Developer"
    
   ];
   return (
-    <div className="  fixed top- w-full bg-white  z-10 px-2">
+    <div className="   top- w-full bg-white px-2  py-2 fixed">
    {buttonList.map((item, index) => (
         <Button key={index} name={item} />
       ))}

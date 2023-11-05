@@ -11,7 +11,7 @@ import { YOUTUBE_SEARCH_API_URL } from "../constants";
 import { cacheResults } from "../utils/searchSlice";
 import search from "../assets/img/search.png";
 import SuggestionList from "./SuggenstionList";
-import { toggleList } from "../utils/suggestionSlice";
+import { openList } from "../utils/suggestionSlice";
 
 
 
@@ -35,7 +35,8 @@ const Header = () => {
       clearTimeout(timer);
     };
   }, [searchQuery]);
-
+  
+  
   const searchSuggestions = async () => {
     const data = await fetch(YOUTUBE_SEARCH_API_URL + searchQuery);
     const json = await data.json();
@@ -52,7 +53,7 @@ const Header = () => {
     dispatch(toggleMenu());
   };
   const suggestedListHandler= ()=>{
-    dispatch(toggleList());
+    dispatch(openList());
   };
   
  
@@ -79,7 +80,7 @@ const Header = () => {
             className="w-2/3 h-10 p-2 py-4 border border-gray-400 text-gray-900 text-sm rounded-l-full focus:ring-blue-500"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            onClick={suggestedListHandler}
+            onFocus={suggestedListHandler}
           
           />
           <button className="bg-gray-50 border border-gray-400 h-10 w-14 rounded-r-full p-2 font-bold justify-center">

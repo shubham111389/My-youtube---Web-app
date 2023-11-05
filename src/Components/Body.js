@@ -7,7 +7,7 @@ const Body = () => {
   return (
   
     <div className="flex  py-20">
-      <div className=" shadow-lg border-1 m-2  border-red-200  sticky top-20">
+      <div className=" shadow-lg border-1 m-2  border-red-200">
  
      <SideBar />
      </div>

@@ -21,10 +21,10 @@ const VideoContainer = () => {
     dispatch(videoList(json.items));
   };
 
-  return videoData.length === 0 ? (
+  return !videoData ||  videoData.length === 0  ? (
     <Shimmer key="ShimmerComponent" />
   ) : (
-    <div className="flex flex-wrap ml-4 z-10 ">
+    <div className="flex flex-wrap ml-4 z-10 py-7 ">
  
       {videoData[0] && (
         <Link to={"/watch?v=" + videoData[0].id}>

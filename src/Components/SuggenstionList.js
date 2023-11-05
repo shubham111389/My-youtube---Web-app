@@ -17,7 +17,7 @@ const SuggestionList  = (storage) => {
 
    const val1= storage.storage;
   return !isListOpen ?null: (
-    <div><div className="bg-white px-5 w-[41.666667%] shadow-lg rounded-lg absolute">
+    <div><div className="bg-white px-5 w-[41.666667%] shadow-lg rounded-lg absolute ">
     {
        
       <ul>
