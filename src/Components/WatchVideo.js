@@ -17,8 +17,9 @@ const WatchVideo = () => {
     dispatch(closeMenu(false));
   });
   return (
+
     <div className="flex">
-      <div className="flex flex-col">
+      <div className="flex flex-col ">
         <div className="mt-8  mx-6">
           <iframe
             width="1100"
@@ -43,7 +44,7 @@ const WatchVideo = () => {
         <div className="py-2">
           { hideChat? null : <LiveChat/>}
         </div>
-        <div className="px-2 ">
+        <div className="px-2  overflow-auto">
         {videoList.map((video) => (
           <Link to={"/watch?v=" + video.id}>
             <WatchListCard videoData={video} key={video.id} />

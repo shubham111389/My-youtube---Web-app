@@ -30,11 +30,11 @@ const Search_Keyword_page = () => {
    <div>
       <div className='py-3'>
           <ButtonList/>
-      </div>
-    <div className='py-8 h-[100vh] overflow-auto w-full' >
+      </div>]
+    <div className='py-12 h-[100vh]  w-[1500px] overflow-auto' >
      { searchVideo.map( (video)=>(
       
-      <Link to={"/watch?v1=" + video.id.videoId} state={{ video: video }}>
+      <Link to={"/watch?v=" + video.id.videoId} state={{ video: video }}>
       <WatchSearchVideo videoData={video} />
       </Link>
      )

@@ -8,7 +8,7 @@ const{ title,thumbnails}=snippet;
 
 
 return (
-    <div className="h-30 w-f hover:shadow-lg px-8 py-6 rounded-lg flex hover:animate-pulse  bg-red-100 ">
+    <div className=" hover:shadow-lg px-8 py-6 rounded-lg flex hover:animate-pulse  bg-red-50 ">
      <img
         className="rounded-lg h-30 w-50"
         src={thumbnails.medium.url}
