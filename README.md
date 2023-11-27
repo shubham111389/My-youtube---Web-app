@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+<div align="center">
+  
+[![shubham111389 -My-youtube-Web-app ](https://img.shields.io/static/v1?label=shubham111389&message=My-youtube&color=blue&logo=github)](https://github.com/shubham111389/My-youtube---Web-app "Go to GitHub repo")
+[![stars - My-youtube---Web-app](https://img.shields.io/github/stars/shubham111389/My-youtube---Web-app?style=social)](https://github.com/shubham111389/My-youtube---Web-app)
+[![forks - My-youtube---Web-app](https://img.shields.io/github/forks/shubham111389/My-youtube---Web-app?style=social)](https://github.com/shubham111389/My-youtube---Web-app)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+  <br />
+  <br />
 
-In the project directory, you can run:
+  <h2 align="center"> My-youtube-Web-app-  Create a Youtube Clone Website .</h2>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Introducing "MY - Youtube " 🎬🚀 - Your revolutionary YouTube clone web project! 🌐👀 Dive into a world of unlimited video content at your fingertips. 📺🖥️ Explore diverse categories, seamlessly navigate, and enjoy an immersive viewing experience. 🍿🏡 Watch your favorite content hassle-free from the comfort of your browser. 🌟🔗 Discover, share, and create your own video haven with ViewVibe! 🚀🎉 #ViewVibe #ExploreUnlimited
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ <div align="center">
 
-### `npm test`
+[![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/shubham111389//My-youtube---Web-app/generate)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[![View site - GH Pages](https://img.shields.io/badge/View_site-GH_Pages-2ea44f?style=for-the-badge)](https://myyoutube11.netlify.app/)
 
-### `npm run build`
+</div>
+</div>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Demo Screeshots
+![My-youtube---Web-app](https://raw.githubusercontent.com/shubham111389/My-youtube---Web-app/main/src/assets/img/project1.jpg?raw=true "Optional Title")
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Before you begin, ensure you have met the following requirements:
 
-### `npm run eject`
+* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Run Locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run My-youtube--Web-app** locally, run this command on your git bash:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Linux and macOS:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+sudo git clone https://github.com/shubham111389/My-youtube---Web-app
+```
 
-## Learn More
+Windows:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+git clone https://github.com/shubham111389/FMy-youtube---Web-app
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Contact
 
-### Code Splitting
+If you want to contact with me you can reach me at [Linkedein](https://www.linkedin.com/in/shubham-annpurne-0183bb232/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### License
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is **free to use** and does not contains any license.
+](https://github.com/shubham111389/Food_haven/edit/main/README.md)
